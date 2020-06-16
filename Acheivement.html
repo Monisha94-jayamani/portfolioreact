@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>React Session</title>
+    <meta charset="UTF-8" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <head>
+      <style>
+               .ul
+{
+  list-style-type: "none",;
+  margin: "0";
+  padding:" 0";
+  background-color: azure;
+  height: 78px;
+}
+  
+
+.li {
+  display: inline;
+  margin: 20px;
+  color: black;
+  font-size: 24px;
+
+}
+      </style>
+    </head>
+    <body>
+        <div id="root" ></div>
+    <script type="text/babel" >
+     var Navbar=()=>(
+    <ul className="ul">
+  <li className="li"><a href="index.html">About</a></li>
+  <li className="li"><a href="Education.html">Education</a></li>
+  <li className="li"><a href="Skills.html">Skills</a></li>
+  <li className="li"><a href="Acheivement.html">Acheivement</a></li>
+  <li className="li"><a href="#about">personal Profile</a></li>
+    </ul>
+    )
+    var Acheivement=()=>{
+        return(
+            <div>
+            <Navbar />
+                <img src="acheivelogo.png" style={{width:"100%",height:"272px",marginLeft:"20px"}} />
+                <h2 style={{color:"red"}}>Workshop</h2>
+                <ul>
+                <li>Attended Python workshop</li>
+                <li>Attended Java workshop</li>
+                <li>Attended Cloud computing Workshop</li>
+                <li>Attend PHP Workshop</li>
+                </ul>
+                <h2 style={{color:"red"}}>Paper Presentation</h2>
+                <ul>
+                 <li> Published International Journal in MMD-S1-SeverModel.</li>
+                 <li>Presented paper on E-learning based on Cloud Computing</li>
+              
+                </ul>
+                <h2 style={{color:"red"}}>Internship</h2>
+                <ul>
+                 <li>Went 3 month Java courses</li>
+                      <li>Went HTML,CSS Internship for 2 month in cloud logistic technology. </li>
+              
+                </ul>
+
+            </div>
+        )
+    }
+    ReactDOM.render(<Acheivement />,document.getElementById("root"));
+    </script>
+    </body>
+    </html>
