@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>React Session</title>
+    <meta charset="UTF-8" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <style>
+        .ul
+{
+  list-style-type: "none",;
+  margin: "0";
+  padding:" 0";
+  background-color: azure;
+  height: 128px;
+}
+.li {
+  display: inline;
+  margin: 21px;
+  color: black;
+  font-size: 24px;
+
+}
+
+  </style>
+  <body>
+      <div id="root"></div>
+      <script  type="text/babel">
+       var Navbar=()=>(
+    <ul className="ul">
+  <li className="li"><a href="index.html">About</a></li>
+  <li className="li"><a href="Education.html">Education</a></li>
+  <li className="li"><a href="#">Skills</a></li>
+  <li className="li"><a href="Acheivement.html">Acheivement</a></li>
+  <li className="li"><a href="#about">Personal Profile</a></li>
+    </ul>
+       )
+    var Skills=()=>{
+        return(
+            <div>
+            <Navbar />
+            <h2 style={{color:"red"}}>Skills</h2>
+            
+            <h2 style={{color:"orange"}}>Languages Known:</h2>
+            <ul>
+            <li>C</li>
+            <li>C++</li>
+            <li>JAVA</li>
+            <li>HTML,CSS</li>
+            <li>BOOTSTRAP</li>
+            <li>JAVASCRIPT</li>
+            <li>PYTHON</li>
+            </ul>
+            </div>
+        )
+    }
+  
+    
+    ReactDOM.render(<Skills />,document.getElementById("root"))
+
+      </script>
+  </body>
+  </html>
