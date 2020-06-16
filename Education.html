@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>React Session</title>
+    <meta charset="UTF-8" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body >
+      <style>
+          .ul
+{
+  list-style-type: "none",;
+  margin: "0";
+  padding:" 0";
+  background-color: azure;
+  height: 78px;
+}
+  
+
+.li {
+  display: inline;
+  margin: 21px;
+  color: black;
+  font-size: 24px;
+
+}
+      </style>
+   <div id="root" style="height:100%" ></div>
+   
+   <script type="text/babel" >
+
+    var Navbar=()=>(
+    <ul className="ul">
+  <li className="li"><a href="index.html">About</a></li>
+  <li className="li"><a href="Education.html">Education</a></li>
+  <li className="li"><a href="#">Skills</a></li>
+  <li className="li"><a href="Acheivement.html">Acheivement</a></li>
+  <li className="li"><a href="#about">Personal Profile</a></li>
+    </ul>
+    )
+   var Education=()=>{
+       return(
+           <div style={{backgroundColor:"aqua",height: "685px",marginLeft:"20px"}}>
+            <Navbar />
+            <div style={{backgroundColor:"blue",height: "61px"}}>
+           <h2 style={{marginLeft:"560px",marginTop:"-18px"}} >EDUCATION</h2> </div>
+           <h2 style={{color:"orange"}}>DEGREE</h2>
+           <ul>
+            <li>St.Annes College of Engineering and Technology</li>
+            <li>Computer Science and Engineering(Pursing)</li>
+            <li>8.0 CGPA</li>
+
+           </ul>
+          
+           <h2 style={{color:"red"}}>HSC</h2>
+           <ul>
+            <li>Sri Valliammal Matriculation and Higher Secondary School</li>
+            <li>80%</li>
+            
+
+           </ul>
+
+           <h2 style={{color:"red"}}>SSLC</h2>
+           <ul>
+            <li>The Best Matriculation higher Secondary School</li>
+            <li>90%</li>
+            
+
+           </ul>
+           <h2 style={{color:"red"}}>EXTRA SKILLS</h2>
+           <h2 style={{color:"orange"}}>Courses</h2>
+           <ul>
+            <li>UnderWent a Course in JAVA at GURUDEV SOFTWARE SOLUTION PONDICHERRY with 90%</li>
+         
+            
+
+           </ul>
+
+           </div>
+       )
+   }
+    ReactDOM.render(<Education />,document.getElementById("root"));
+   </script>
+    </body>
+    </html>
